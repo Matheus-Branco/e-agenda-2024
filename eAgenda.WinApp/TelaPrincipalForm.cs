@@ -45,7 +45,7 @@ namespace eAgenda.WinApp
         }
         private void ConfigurarListagem(ControladorBase controladorSelecionado)
         {
-            UserControl listagemContato = controladorSelecionado.ObterListagem();
+            UserControl listagemContato = controladorSelecionado.ObterListagem;
             listagemContato.Dock = DockStyle.Fill;
 
             pnlRegistros.Controls.Clear();

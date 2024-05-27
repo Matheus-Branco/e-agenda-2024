@@ -22,7 +22,7 @@ namespace eAgenda.WinApp.ModuloContato
 
         public override void Adicionar()
         {
-            TelaContatoForm telaContato = new TelaContatoForm();
+            TelaCompromissoForm telaContato = new TelaContatoForm();
 
             DialogResult resultado = telaContato.ShowDialog();
 
@@ -43,14 +43,17 @@ namespace eAgenda.WinApp.ModuloContato
             listagemContato.AtualizarRegistros(contatos);
         }
 
-        public override UserControl ObterListagem()
+        public override UserControl ObterListagem
         {
-            if (listagemContato == null)
-                listagemContato = new ListagemContatoControl();
+            get
+            {
+                if (listagemContato == null)
+                    listagemContato = new ListagemContatoControl();
 
-            CarregarContatos();
+                CarregarContatos();
 
-            return listagemContato;
+                return listagemContato;
+            }
         }
     }
 }
