@@ -19,7 +19,7 @@ namespace eAgenda.WinApp.ModuloCompromisso
         public string CompromissoDia { get; set; }
         public string CompromissoSemana { get; set; }
 
-        public Compromisso(string assunto, string local, DateTime inicioCompromisso, DateTime terminoCompromisso, string compromissoDia, string compromissoSemana)
+        public Compromisso(string assunto, string local, string v, DateTime inicioCompromisso, DateTime terminoCompromisso, string compromissoDia, string compromissoSemana)
         {
             Assunto = assunto;
             Local = local;

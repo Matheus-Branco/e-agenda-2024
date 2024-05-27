@@ -41,6 +41,7 @@
             listContatos.Name = "listContatos";
             listContatos.Size = new Size(551, 323);
             listContatos.TabIndex = 0;
+            listContatos.SelectedIndexChanged += listContatos_SelectedIndexChanged;
             // 
             // ListagemContatoControl
             // 
